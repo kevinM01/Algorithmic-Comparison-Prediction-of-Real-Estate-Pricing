@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction of Real Estate Pricing</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+
+    <!-- custom css file link  -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header>
+
+    <a href="#" class="logo"><span>Prediction of Real Estate Pricing</a>
+
+    <nav class="navbar">
+        <a href="{{url_for('index')}}">home</a>
+        <a href="#services">services</a>
+        <a href="#featured">featured</a>
+
+        <a href="#contact">contact</a>
+    </nav>
+
+
+</header>
+
+<section class="home" id="home">
+
+{#    <form action="">#}
+{##}
+{#        <h3>Prediction of Real Estate Pricing</h3>#}
+{##}
+{##}
+{#        <div class="inputBox">#}
+{##}
+{#            <input type="search" name="" placeholder="LOCATION" id="">#}
+{##}
+{#            <select name="" id="">#}
+{#                <option value="" disabled hidden selected>BHK</option>#}
+{#                <option value="1 BHK">1 BHK</option>#}
+{#                <option value="2 BHK">2 BHK</option>#}
+{#                <option value="3 BHK">3 BHK</option>#}
+{#                <option value="4 BHK">4 BHK</option>#}
+{#                <option value="5 BHK">5 BHK</option>#}
+{#            </select>#}
+{#            <select name="" id="">#}
+{#                <option value="" disabled hidden selected>AREA</option>#}
+{#                <option value="1 BHK">500 sqft</option>#}
+{#                <option value="2 BHK">900 sqft</option>#}
+{#                <option value="3 BHK">1000 sqft</option>#}
+{#                <option value="4 BHK">1200 sqft </option>#}
+{#                <option value="5 BHK">1500 sqft</option>#}
+{#            </select>#}
+{#            <select name="" id="">#}
+{#                <option value="" disabled hidden selected>bathrooms</option>#}
+{#                <option value="1 bathroom">1 bathroom</option>#}
+{#                <option value="2 bathroom">2 bathroom</option>#}
+{#                <option value="3 bathroom">3 bedroom</option>#}
+{#                <option value="4 bathroom">4 bathroom</option>#}
+{#                <option value="5 bathroom">5 bathroom</option>#}
+{#            </select>#}
+{#        </div>#}
+{##}
+{#        <input type="submit" value="Estimate Price" class="btn">#}
+{##}
+{#    </form>#}
+     <div class="container">
+            <div class="row">
+                <div class='card' style="width: 100%; height:100%; margin-top:50px">
+                    <div class="card-header" style="text-align: center;">
+                        <h1>PREDICTION OF REAL ESTATE PRICING</h1>
+                    </div>
+                    <div class="card-body" style='text-align: center'>
+                        <form action="{{ url_for('predict') }}" method="POST">
+                            <div class="row">
+                                <div class="col-md-6 form-group" style="text-align: center">
+                                    <label>LOCATION</label>
+                                    <h1><span>{{location}}</span></h1>
+                                </div>
+                                <div class="col-md-6 form-group" style="text-align: center">
+                                    <label>BHK</label>
+                                    <h1><span>{{bhk}}</span></h1>
+                                </div>
+                                <div class="col-md-6 form-group" style="text-align: center">
+                                    <label>AREA (sqft)</label>
+                                    <h1><span>{{sqft}}</span> Sqft</h1>
+                                </div>
+                                <div class="col-md-6 form-group" style="text-align: center">
+                                    <label>BATHROOMS</label>
+                                    <h1><span>{{bath}}</span></h1>
+                                </div>
+                                <br><br><br>
+ <div class="col-md-12" style="text-align: center;">
+                            <h1 style="font-weight: bold">Estimated Price</h1>
+                            <h1 style="font-weight: bold"><span>{{result}} Approx.</span></h1>
+                        </div>
+
+                            </div>
+                        </form>
+                        <br>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+</body>
+</html>
