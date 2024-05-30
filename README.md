@@ -35,6 +35,6 @@ Lasso
 ![home](https://github.com/kevinM01/GitHub-HomePage-UI/assets/78092182/5b972db0-0c0c-4485-9e4a-4dfacea3e282)
 
 ## UI
-https://github.com/kevinM01/GitHub-HomePage-UI/assets/78092182/a45ebc8a-1cb2-4ee1-839b-a27391209925
+![home](https://github.com/kevinM01/GitHub-HomePage-UI/assets/78092182/a45ebc8a-1cb2-4ee1-839b-a27391209925)
 
-https://github.com/kevinM01/GitHub-HomePage-UI/assets/78092182/ebce2743-7bc8-4db5-ad76-38a032b5d821
+![home](https://github.com/kevinM01/GitHub-HomePage-UI/assets/78092182/ebce2743-7bc8-4db5-ad76-38a032b5d821)
