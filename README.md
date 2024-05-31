@@ -27,8 +27,8 @@ We used a dataset called "Bengaluru House Price Data" for this project. The step
 ## Analysis of Various Algorithms Used
 
 Linear Regression
-DecisionTreeRegressor
-Lasso
+, DecisionTreeRegressor
+, Lasso
 
 
 ## Model Comparision
